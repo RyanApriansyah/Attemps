@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/Components/ui/button";
 import { Switch } from "@/Components/ui/switch";
+<<<<<<< HEAD
 import { Calendar } from "@/Components/ui/calendar";
 import {
     Card,
@@ -11,12 +12,27 @@ import {
     CardTitle,
   } from "@/Components/ui/card"
 
+=======
+import { Alert, AlertDescription, AlertTitle } from "@/Components/ui/alert";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/Components/ui/alert-dialog";
+import { Badge } from "@/Components/ui/badge";
+>>>>>>> ddc6930858f55beacd9528b8b1fbbb1284b15212
 import Navbar from "@/Components/Navbar";
 
 export default function Home() {
     const [date, setDate] = React.useState<Date | undefined>(new Date())
     return (
-        <div className="w-full h-screen pt-10 bg-[#202020]">
+        <div className="w-full h-screen pt-10 ">
             <Navbar></Navbar>
             <div className="hero-text w-[70%] mx-auto mt-24 ">
                 <p className="text-white text-[70px] font-hero  font-thin text-center font-bold mb-4">
@@ -25,7 +41,32 @@ export default function Home() {
                 </p>
             </div>
             <Switch></Switch>
+            <Alert variant="default">
+                <AlertTitle>
+                    anda bukan admin !
+                </AlertTitle>
+                <AlertDescription>
+                    silahkan cek kembali 
+                </AlertDescription>
+            </Alert>
+            <AlertDialog>
+  <AlertDialogTrigger>Open</AlertDialogTrigger>
+  <AlertDialogContent>
+    <AlertDialogHeader>
+      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+      <AlertDialogDescription>
+        This action cannot be undone. This will permanently delete your account
+        and remove your data from our servers.
+      </AlertDialogDescription>
+    </AlertDialogHeader>
+    <AlertDialogFooter>
+      <AlertDialogCancel>Cancel</AlertDialogCancel>
+      <AlertDialogAction>Continue</AlertDialogAction>
+    </AlertDialogFooter>
+  </AlertDialogContent>
+</AlertDialog>
             <Button>Click Me</Button>
+<<<<<<< HEAD
             <Calendar  mode="single"
     selected={date}
     onSelect={setDate}
@@ -42,6 +83,9 @@ export default function Home() {
                 <Button>Klik aku</Button>
                 <Switch></Switch>
             </Card>
+=======
+            <Badge variant="secondary" className="hover:bg-red-300">Tetsss</Badge>
+>>>>>>> ddc6930858f55beacd9528b8b1fbbb1284b15212
         </div>
     );
 }
