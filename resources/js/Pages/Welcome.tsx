@@ -1,5 +1,18 @@
+import React from "react";
 import { Button } from "@/Components/ui/button";
 import { Switch } from "@/Components/ui/switch";
+<<<<<<< HEAD
+import { Calendar } from "@/Components/ui/calendar";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+  } from "@/Components/ui/card"
+
+=======
 import { Alert, AlertDescription, AlertTitle } from "@/Components/ui/alert";
 import {
   AlertDialog,
@@ -13,9 +26,11 @@ import {
   AlertDialogTrigger,
 } from "@/Components/ui/alert-dialog";
 import { Badge } from "@/Components/ui/badge";
+>>>>>>> ddc6930858f55beacd9528b8b1fbbb1284b15212
 import Navbar from "@/Components/Navbar";
 
 export default function Home() {
+    const [date, setDate] = React.useState<Date | undefined>(new Date())
     return (
         <div className="w-full h-screen pt-10 ">
             <Navbar></Navbar>
@@ -54,7 +69,26 @@ export default function Home() {
   </AlertDialogContent>
 </AlertDialog>
             <Button>Click Me</Button>
+<<<<<<< HEAD
+            <Calendar  mode="single"
+    selected={date}
+    onSelect={setDate}
+    className="rounded-lg border">
+                
+            </Calendar>
+            <Card>
+                <CardHeader>
+                <CardTitle>Putra</CardTitle>
+                <CardDescription>Putra Anwar Fadilah Ganteng</CardDescription>
+                </CardHeader>
+                <CardContent className="text-xl text-blue-400"><p>Putra</p></CardContent>
+                <CardFooter><p>Putra</p></CardFooter>
+                <Button>Klik aku</Button>
+                <Switch></Switch>
+            </Card>
+=======
             <Badge variant="secondary" className="hover:bg-red-300">Tetsss</Badge>
+>>>>>>> ddc6930858f55beacd9528b8b1fbbb1284b15212
         </div>
     );
 }
