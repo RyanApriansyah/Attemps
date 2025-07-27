@@ -100,6 +100,7 @@ export default function Home() {
 
             <h1>Halooooooo saya ryannn gantenggggggggggggggggg</h1>
             <h1>TESTT BARU</h1>
+            <h1>Ryan Love sisi semoga nikah tahun 2045</h1>
         </div>
     );
 }
