@@ -99,6 +99,7 @@ export default function Home() {
             </Badge>
 
             <h1>Halooooooo saya ryannn gantenggggggggggggggggg</h1>
+            <h1>TESTT BARU</h1>
         </div>
     );
 }
