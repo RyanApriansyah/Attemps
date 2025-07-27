@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "@/Components/ui/button";
 import { Switch } from "@/Components/ui/switch";
-<<<<<<< HEAD
 import { Calendar } from "@/Components/ui/calendar";
 import {
     Card,
@@ -12,7 +11,6 @@ import {
     CardTitle,
   } from "@/Components/ui/card"
 
-=======
 import { Alert, AlertDescription, AlertTitle } from "@/Components/ui/alert";
 import {
   AlertDialog,
@@ -26,7 +24,6 @@ import {
   AlertDialogTrigger,
 } from "@/Components/ui/alert-dialog";
 import { Badge } from "@/Components/ui/badge";
->>>>>>> ddc6930858f55beacd9528b8b1fbbb1284b15212
 import Navbar from "@/Components/Navbar";
 
 export default function Home() {
@@ -69,7 +66,6 @@ export default function Home() {
   </AlertDialogContent>
 </AlertDialog>
             <Button>Click Me</Button>
-<<<<<<< HEAD
             <Calendar  mode="single"
     selected={date}
     onSelect={setDate}
@@ -86,9 +82,7 @@ export default function Home() {
                 <Button>Klik aku</Button>
                 <Switch></Switch>
             </Card>
-=======
             <Badge variant="secondary" className="hover:bg-red-300">Tetsss</Badge>
->>>>>>> ddc6930858f55beacd9528b8b1fbbb1284b15212
         </div>
     );
 }
