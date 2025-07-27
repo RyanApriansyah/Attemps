@@ -24,6 +24,9 @@ export default function Home() {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Error, velit.
                 </p>
+                <p className="text-white text-[70px] font-hero  font-thin text-center font-bold mb-4">
+                    Push Bagas 
+                </p>
             </div>
             <Switch></Switch>
             <Alert variant="default">
