@@ -37,7 +37,7 @@ export default function Home() {
                     Error, velit.
                 </p>
                 <p className="text-white text-[70px] font-hero  font-thin text-center font-bold mb-4">
-                    Push Bagas 
+                    Push Bagas
                 </p>
             </div>
             <Switch></Switch>
@@ -65,12 +65,12 @@ export default function Home() {
                 </AlertDialogContent>
             </AlertDialog>
             <Button>Click Me</Button>
-            <Calendar  mode="single"
-    selected={date}
-    onSelect={setDate}
-    className="rounded-lg border">
-                
-            </Calendar>
+            <Calendar
+                mode="single"
+                selected={date}
+                onSelect={setDate}
+                className="rounded-lg border"
+            ></Calendar>
             <Calendar
                 mode="single"
                 selected={date}
@@ -93,7 +93,9 @@ export default function Home() {
                 <Button>Klik aku</Button>
                 <Switch></Switch>
             </Card>
-            <Badge variant="secondary" className="hover:bg-red-300">Tetsss</Badge>
+            <Badge variant="secondary" className="hover:bg-red-300">
+                Tetsss
+            </Badge>
             <Badge variant="secondary" className="hover:bg-red-300">
                 Tetsss
             </Badge>
@@ -102,6 +104,10 @@ export default function Home() {
             <h1>TESTT BARU</h1>
             <h1>Ryan Love sisi semoga nikah tahun 2045</h1>
             <h1>Ryan Love sisi semoga nikah tahun 3000</h1>
+            <h1>
+                ya allah semoga gw bisa jalan sama sisi di bulan agustus
+                iniiiiii
+            </h1>
         </div>
     );
 }
